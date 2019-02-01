@@ -3,3 +3,20 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin h1-primary {
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    margin: 0 0 30px;
+    font-size: 30px;
+
+    &::before {
+        position: absolute;
+        content: '';
+        bottom: -5px;
+        left: 0;
+        padding: 20px;
+        width: 20%;
+        border-bottom: 2px solid black;
+    }
+}

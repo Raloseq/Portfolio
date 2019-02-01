@@ -2,7 +2,38 @@
 @import "_variables.scss";
 
 .app-skills {
-    height: 100vh;
+    height: 320vh;
     background-color: rgb(72, 130, 229);
-    color: white;
+    @include flex-center;
+    flex-direction: column;
+    padding: 20px;
+
+    .h1--primary {
+        @include h1-primary;
+
+    }
+
+    .app-skills--knowledge {
+        font-size: 20px;
+        font-family: 'Ubuntu', sans-serif;
+        margin: 40px;
+    }
+
+    .app-skills--div {
+        .app-skills__center {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            width: 70px;
+            margin: 15px 8px;
+        }
+
+        .app-skills--p {
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 1px;
+        }
+    }
+
 }
