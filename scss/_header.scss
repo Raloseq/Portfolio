@@ -1,6 +1,48 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+
 .app-header {
     height: 100vh;
     background: url(../images/hero-image.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
+    color: white;
+    font-size: 35px;
+    @include flex-center;
+    position: relative;
+
+    .app-header--text {
+        width: 100%;
+        background-color: rgba(0, 0, 0, .4);
+        position: absolute;
+        padding: 5px;
+        top: 35%;
+        @include flex-center;
+
+        .app-header--h1 {
+            font-size: 40px;
+        }
+    }
+
+    .fas {
+        font-size: 50px;
+        position: absolute;
+        bottom: 7%;
+        animation: up-down-arrow linear 1s infinite;
+    }
+}
+
+//KEYFRAMES 
+@keyframes up-down-arrow {
+    0% {
+        transform: translateY(-30%);
+    }
+
+    50% {
+        transform: translateY(30%);
+    }
+
+    100% {
+        transform: translateY(-30%);
+    }
 }

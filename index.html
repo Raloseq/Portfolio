@@ -5,27 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Portfolio Rafał Brzeziński</title>
+    <!-- STYLES -->
     <link rel="stylesheet" href="css/main.min.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+
+
 </head>
 
 <body>
     <nav class="app-nav">
         <ul class="app-nav--list">
             <li class="app-nav--item">
-                <a href="#" class="app-nav--link">Home</a>
+                <a href="#" class="app-nav--link">Strona Główna</a>
             </li>
             <li class="app-nav--item">
-                <a href="#" class="app-nav--link">About</a>
+                <a href="#" class="app-nav--link">O mnie</a>
             </li>
             <li class="app-nav--item">
-                <a href="#" class="app-nav--link">Skills</a>
+                <a href="#" class="app-nav--link">Technologie</a>
             </li>
             <li class="app-nav--item">
-                <a href="#" class="app-nav--link">Projects</a>
+                <a href="#" class="app-nav--link">Projekty</a>
             </li>
             <li class="app-nav--item">
-                <a href="#" class="app-nav--link">Contact</a>
+                <a href="#" class="app-nav--link">Kontakt</a>
             </li>
         </ul>
         <div class="app-nav--burger">
@@ -35,24 +41,40 @@
         </div>
     </nav>
     <header class="app-header">
-        <div class="app-header--typing">
-            <h1></h1>
+        <div class="app-header--text">
+            <h1 class="app-header--h1">Cześć, jestem</h1>
         </div>
+        <span id="typed"></span>
+        <i class="fas fa-arrow-down"></i>
     </header>
     <main>
-        <section class="about">
+        <section class="app-about">
+            <h1 class="app-about--h1 h1--primary">Kilka słów o mnie</h1>
+            <p class="app-about--p p--primary">Cześć, nazywam się Rafał Brzeziński jestem młody człowiekiem, który lubi
+                poznawać nowe rzeczy,technologie. Chciałbym dążyć do zostania <span class="app-about--p__bold">Full-Stack Developerem</span>.
+                Jak narazie rozwijam się w zakresie tworzenia stron internetowych. Moje projekty tworzę z założeniem
+                "mobile first", nie jest mi obce pojęcie RWD. Mój kod jest uporządkowany , zgodny z semantyką html'a 5.
+        </section>
+        <section class="app-skills">
+            <h1 class="h1--primary">Technologie, którymi się posługuję</h1>
 
         </section>
-        <section class="skills">
-
-        </section>
-        <section class="projects">
+        <section class="app-projects">
 
         </section>
     </main>
-    <footer>
+    <footer class="app-footer">
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ['Rafał Brzeziński.', 'twoim developerem.'],
+            backSpeed: 50,
+            typeSpeed: 50,
+            loop: true
+        });
+    </script>
     <script src="js/nav.js"></script>
 </body>
 

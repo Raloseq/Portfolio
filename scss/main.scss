@@ -2,6 +2,10 @@
 @import "_variables.scss";
 @import "_nav.scss";
 @import "_header.scss";
+@import "_about.scss";
+@import "_skills.scss";
+@import "_projects.scss";
+@import "_footer.scss";
 
 *,
 *::after,
@@ -9,4 +13,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+main {
+    width: 100%;
 }
