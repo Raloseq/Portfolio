@@ -17,7 +17,7 @@
         position: absolute;
         padding: 5px;
         top: 35%;
-        @include flex-center;
+        @include flex-center-mobile;
 
         .app-header--h1 {
             font-size: 40px;

@@ -3,8 +3,7 @@
 
 .app-about {
     height: 70vh;
-    @include flex-center;
-    flex-direction: column;
+    @include flex-center-mobile;
     padding: 20px;
 
     .app-about--h1 {

@@ -1,3 +1,10 @@
+@mixin flex-center-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 @mixin flex-center {
     display: flex;
     justify-content: center;

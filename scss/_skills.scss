@@ -4,8 +4,7 @@
 .app-skills {
     height: 320vh;
     background-color: rgb(72, 130, 229);
-    @include flex-center;
-    flex-direction: column;
+    @include flex-center-mobile;
     padding: 20px;
 
     .h1--primary {
