@@ -8,14 +8,30 @@
 
     .app-about--h1 {
         @include h1-primary;
+        opacity: 0;
+        transition: .5s;
+        transform: translateX(-30px);
     }
 
     .app-about--p {
         letter-spacing: 1px;
         font-family: 'Roboto', sans-serif;
+        transition: .5s;
+        opacity: 0;
+        transform: translateX(30px);
 
         .app-about--p__bold {
             font-weight: bold;
         }
+    }
+
+    .app-about--h1__active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .app-about--p__active {
+        opacity: 1;
+        transform: translateX(0);
     }
 }

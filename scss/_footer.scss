@@ -2,7 +2,38 @@
 @import "_variables.scss";
 
 .app-footer {
-    height: 100vh;
-    background-color: rgb(80, 145, 255);
-    color: white;
+    height: 50vh;
+    // background-color: rgb(80, 145, 255);
+    @include flex-center-mobile;
+    padding: 15px;
+
+    .h1--primary {
+        @include h1-primary;
+    }
+
+    .app-footer--div {
+        display: flex;
+
+        .app-footer--link {
+            text-decoration: none;
+            cursor: pointer;
+
+            .fa-github {
+                color: black;
+            }
+
+            .fa-linkedin {
+                color: rgb(0, 119, 181);
+            }
+
+            .fa-envelope {
+                color: black;
+            }
+
+            .app-footer--icons {
+                margin: 30px;
+                font-size: 40px;
+            }
+        }
+    }
 }
