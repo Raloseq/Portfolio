@@ -2,8 +2,6 @@
 @import "_variables.scss";
 
 .app-skills {
-    height: 320vh;
-    background-color: rgb(72, 130, 229);
     @include flex-center-mobile;
     padding: 20px;
 
@@ -18,21 +16,95 @@
         margin: 40px;
     }
 
-    .app-skills--div {
-        .app-skills__center {
-            display: flex;
-            align-items: center;
-        }
+    .container {
 
-        img {
-            width: 70px;
-            margin: 15px 8px;
-        }
 
-        .app-skills--p {
-            font-family: 'Roboto', sans-serif;
-            letter-spacing: 1px;
+        .app-skills--div {
+
+
+            img {
+                width: 70px;
+                margin: 15px 8px;
+            }
+
+            .app-skills--p {
+                font-family: 'Roboto', sans-serif;
+                letter-spacing: 1px;
+            }
         }
     }
 
+}
+
+//PORTRAIT
+@media (min-width: 321px) {
+    .app-skills {
+
+        .h1--primary {
+            font-size: 40px;
+
+        }
+    }
+}
+
+@media (min-width: 361px) {
+    .app-skills {
+
+        .h1--primary {
+            font-size: 50px;
+
+        }
+
+        .app-skills--knowledge {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .app-skills {
+        padding: 50px;
+
+        .h1--primary {
+            font-size: 50px;
+            margin: 0 0 80px;
+
+        }
+
+        .app-skills--knowledge {
+            font-size: 30px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .app-skills--div {
+                flex-basis: 30%;
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    width: 100px;
+                    margin: 15px auto;
+                    filter: grayscale(100%);
+                    transition: .2s;
+                }
+
+                &:hover img {
+                    filter: grayscale(0);
+                }
+
+                .app-skills--div_row {
+                    margin: 0 auto;
+                }
+
+                .app-skills--p {
+                    padding: 40px;
+                }
+            }
+        }
+
+    }
 }

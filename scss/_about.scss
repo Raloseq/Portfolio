@@ -2,7 +2,7 @@
 @import "_variables.scss";
 
 .app-about {
-    height: 70vh;
+    height: 90vh;
     @include flex-center-mobile;
     padding: 20px;
 
@@ -10,15 +10,16 @@
         @include h1-primary;
         opacity: 0;
         transition: .5s;
-        transform: translateX(-30px);
+        transform: translateX(-20px);
     }
 
     .app-about--p {
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         font-family: 'Roboto', sans-serif;
         transition: .5s;
         opacity: 0;
-        transform: translateX(30px);
+        transform: translateX(20px);
+        padding: 20px;
 
         .app-about--p__bold {
             font-weight: bold;
@@ -33,5 +34,35 @@
     .app-about--p__active {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+//PORTRAIT
+@media (min-width: 321px) {
+    .app-about {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 361px) {
+    .app-about {
+        height: 60vh;
+    }
+}
+
+@media (min-width:768px) {
+    .app-about {
+        height: 60vh;
+
+        .app-about--h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .app-about--p {
+            padding: 60px;
+            margin: 0 auto;
+            font-size: 20px;
+        }
     }
 }

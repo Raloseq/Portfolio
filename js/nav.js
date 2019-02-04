@@ -8,3 +8,15 @@ burgerAnimation.addEventListener('click', function () {
         e.classList.toggle('active-item');
     })
 });
+window.addEventListener('scroll', function () {
+    let windowPosistion = window.scrollY;
+    console.log(windowPosistion);
+    if (windowPosistion > 50) {
+        openMobileNav.classList.add('menuColorScroll');
+    } else {
+        openMobileNav.classList.remove('menuColorScroll');
+    };
+    if (windowPosistion > 500) {
+        burgerAnimation.classList.add('xd1');
+    }
+})

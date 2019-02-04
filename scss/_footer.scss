@@ -3,9 +3,9 @@
 
 .app-footer {
     height: 50vh;
-    // background-color: rgb(80, 145, 255);
     @include flex-center-mobile;
     padding: 15px;
+
 
     .h1--primary {
         @include h1-primary;
@@ -33,6 +33,34 @@
             .app-footer--icons {
                 margin: 30px;
                 font-size: 40px;
+            }
+        }
+    }
+}
+
+@media (min-width: 360px) {
+    .app-footer {
+        height: 40vh;
+
+        .h1--primary {
+            font-size: 40px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .app-footer {
+        height: 30vh;
+
+        .h1--primary {
+            font-size: 50px;
+        }
+
+        .app-footer--div {
+            .app-footer--link {
+                .app-footer--icons {
+                    font-size: 60px;
+                }
             }
         }
     }

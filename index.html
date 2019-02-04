@@ -18,22 +18,27 @@
 </head>
 
 <body>
+
+
+    <!-- NAV SECTION -->
+
+
     <nav class="app-nav">
         <ul class="app-nav--list">
             <li class="app-nav--item">
-                <a href="#" class="app-nav--link">Strona Główna</a>
+                <a href="#app-header--href" class="app-nav--link">Strona Główna</a>
             </li>
             <li class="app-nav--item">
-                <a href="#" class="app-nav--link">O mnie</a>
+                <a href="#app-about--href" class="app-nav--link">O mnie</a>
             </li>
             <li class="app-nav--item">
-                <a href="#" class="app-nav--link">Technologie</a>
+                <a href="#app-skills--href" class="app-nav--link">Technologie</a>
             </li>
             <li class="app-nav--item">
-                <a href="#" class="app-nav--link">Projekty</a>
+                <a href="#app-projects--href" class="app-nav--link">Projekty</a>
             </li>
             <li class="app-nav--item">
-                <a href="#" class="app-nav--link">Kontakt</a>
+                <a href="#app-footer--href" class="app-nav--link">Kontakt</a>
             </li>
         </ul>
         <div class="app-nav--burger">
@@ -42,15 +47,29 @@
             <span></span>
         </div>
     </nav>
-    <header class="app-header">
+
+
+    <!-- HEADER SECTION -->
+
+
+    <header class="app-header" id="app-header--href">
         <div class="app-header--text">
             <h1 class="app-header--h1">Cześć, jestem</h1>
+        </div>
+        <div id="typed-strings">
+            <p>Rafał Brzeziński.</p>
+            <p>twoim developerem.</p>
         </div>
         <span id="typed"></span>
         <i class="fas fa-arrow-down"></i>
     </header>
     <main>
-        <section class="app-about">
+
+
+        <!-- ABOUT SECTION -->
+
+
+        <section class="app-about" id="app-about--href">
             <h1 class="app-about--h1 h1--primary">Kilka słów o mnie</h1>
             <p class="app-about--p p--primary">Cześć, nazywam się Rafał Brzeziński jestem uczniem technikum
                 informatycznego na czwartym roku, lubie
@@ -58,76 +77,104 @@
                 Jak narazie rozwijam się w zakresie tworzenia stron internetowych. Napotkane problemy przeze mnie lubię
                 rozwiązywać.
         </section>
-        <section class="app-skills">
+
+
+        <!-- SKILLS SECTION -->
+
+
+        <section class="app-skills" id="app-skills--href">
             <h1 class="h1--primary">Technologie</h1>
-            <h2 class="app-skills--knowledge">Doświadczony</h2>
-            <div class="app-skills--div">
-                <img src="images/icons/html.svg" alt="html-icon">
-                <p class="app-skills--p">Mój kod HTML jest uporządkowany oraz zgodny ze schemantyką. </p>
-            </div>
-            <div class="app-skills--div">
-                <img src="images/icons/sass.svg" alt="sass-icon">
-                <p class="app-skills--p">Potrafię ożywić stronę, używam flexbox'a w swoich projektach. Stosuje
-                    zasadę DRY oraz korzystam z metodyki BEM w celu łatwiejszego poruszania się oraz rozumienia
-                    poszczególnych częsci kodu. Moje projekty tworzę z założeniem "mobile first" oraz wykorzystuję RWD.</p>
-            </div>
-            <div class="app-skills--div">
-                <img src="images/icons/javascript.svg" alt="js-icon">
-                <p class="app-skills--p">Cały czas szlifuję swoje umiejętności w JavaScript znam składnię
-                    oraz część ES6 potrafię korzystać z konsoli w celu znalezienia błędu. W przyszłości chiałbym się
-                    nauczyć React'a,Vue albo Angulara.</p>
-            </div>
-            <div class="app-skills--div">
-                <img src="images/icons/bootstrap.svg" alt="bootstrap-icon">
-                <p class="app-skills--p">Potrafię korzystać z Bootstrapa jest to popartę stronami w ,których
-                    korzystałem z tej technologii.</p>
-            </div>
-            <div class="app-skills--div">
-                <img src="images/icons/git.svg" alt="git-icon">
-                <p class="app-skills--p">Coraz lepiej zagłębiam się w świat Git'a. Nie jest mi obce pojęcie
-                    branch,merge itp.
-                </p>
-            </div>
-            <h2 class="app-skills--knowledge">Podstawy</h2>
-            <div class="app-skills--div">
-                <img src="images/icons/php.svg" alt="php-icon">
-                <img src="images/icons/sql.svg" alt="sql-icon">
-                <p class="app-skills--p">Tych technologii uczyłem się w technikum informatycznym. Nie zagłębiałem się w
-                    nie, znam tylko podstawy.</p>
-            </div>
-            <h2 class="app-skills--knowledge">W krótce</h2>
-            <div class="app-skills--div">
-                <div class="app-skills__center">
-                    <img src="images/icons/babel.png" alt="babel-icon">
-                    <img src="images/icons/webpack.svg" alt="webpack-icon">
-                    <img src="images/icons/npm.png" alt="npm-icon">
+            <div class="container">
+                <div class="app-skills--div">
+                    <img src="images/icons/html.svg" alt="html-icon">
+                    <p class="app-skills--p">Mój kod HTML jest uporządkowany oraz zgodny ze schemantyką.Wykorzystuję
+                        nowe znaczniki HTML5. </p>
                 </div>
-                <p class="app-skills--p">
-                    Babel,webpack oraz npm są to technologie, które od teraz stawiam na pierwszym miejscu do nauki.
-                </p>
+                <div class="app-skills--div">
+                    <img src="images/icons/sass.svg" alt="sass-icon">
+                    <p class="app-skills--p">Potrafię ożywić stronę, używam flexbox'a w swoich projektach. Stosuje
+                        zasadę DRY oraz korzystam z metodyki BEM w celu łatwiejszego poruszania się oraz rozumienia
+                        poszczególnych częsci kodu. Moje projekty tworzę z założeniem "mobile first" oraz wykorzystuję
+                        RWD.</p>
+                </div>
+                <div class="app-skills--div">
+                    <img src="images/icons/javascript.svg" alt="js-icon">
+                    <p class="app-skills--p">Cały czas szlifuję swoje umiejętności w JavaScript znam składnię
+                        oraz ES6 potrafię korzystać z konsoli w celu znalezienia błędu. W przyszłości chiałbym się
+                        nauczyć React'a,Vue albo Angulara.</p>
+                </div>
+                <div class="app-skills--div">
+                    <img src="images/icons/bootstrap.svg" alt="bootstrap-icon">
+                    <p class="app-skills--p">Potrafię korzystać z Bootstrapa jest to popartę stronami w ,których
+                        korzystałem z tej technologii.</p>
+                </div>
+                <div class="app-skills--div">
+                    <img src="images/icons/git.svg" alt="git-icon">
+                    <p class="app-skills--p">Coraz lepiej zagłębiam się w świat Git'a. Nie jest mi obce pojęcie
+                        branch,merge itp.
+                    </p>
+                </div>
+                <div class="app-skills--div">
+                    <div class="app-skills--div_row">
+                        <img src="images/icons/php.svg" alt="php-icon">
+                        <img src="images/icons/sql.svg" alt="sql-icon">
+                    </div>
+                    <p class="app-skills--p">Tych technologii uczyłem się w technikum informatycznym. Nie zagłębiałem
+                        się w
+                        nie, znam tylko podstawy.</p>
+                </div>
             </div>
         </section>
-        <section class="app-projects">
+
+
+        <!-- PROJECTS SECTION -->
+
+
+        <section class="app-projects" id="app-projects--href">
             <h1 class="h1--primary">Projekty</h1>
-            <div class="app-projects--div">
-                <div class="app-projects--div__overlay">
-                    <p class="app-projects--p">
-                        Pierwsza strona komercyjna. Technologie: RWD,Bootstrap,CSS3,HTML5.
-                    </p>
-                    <a href="https://www.doradztwo-budowlane.com.pl/" target="blank" class="app-projects--link"><button class="app-projects--button">Sprawdź</button></a>
+            <div class="app-projects--container">
+                <div class="app-projects--div">
+                    <div class="app-projects--div__overlay">
+                        <p class="app-projects--p">
+                            Pierwsza strona komercyjna. Technologie: RWD,Bootstrap,CSS3,HTML5.
+                        </p>
+                        <a href="https://www.doradztwo-budowlane.com.pl/" target="blank" class="app-projects--link"><button class="app-projects--button">Sprawdź</button></a>
+                    </div>
                 </div>
-            </div>
-            <div class="app-projects--div">
-                <div class="app-projects--div__overlay">
-                    <p class="app-projects--p">
-                        Strona portfolio. <br>Technologie: <br>RWD,SASS,HTML5,JavaScript,BEM.
-                    </p>
-                    <a href="https://raloseq.github.io/Portfolio/" target="blank" class="app-projects--link"><button class="app-projects--button">Sprawdź</button></a>
+                <div class="app-projects--div">
+                    <div class="app-projects--div__overlay">
+                        <p class="app-projects--p">
+                            Strona portfolio. Technologie: RWD,SASS,HTML5,JavaScript,BEM.
+                        </p>
+                        <a href="https://raloseq.github.io/Portfolio/" target="blank" class="app-projects--link"><button class="app-projects--button">Sprawdź</button></a>
+                    </div>
+                </div>
+                <div class="app-projects--div">
+                    <div class="app-projects--div__overlay">
+                        <p class="app-projects--p">
+                            Projekt 2-osobowy, po mojej stronie front-end. Technologie:
+                            HTML5,SASS,RWD,Bootstrap,JavaScript.
+                        </p>
+                        <a href="https://github.com/Haqz/Simple-Portfolio-CMS" target="blank" class="app-projects--link"><button class="app-projects--button">Sprawdź</button></a>
+                    </div>
+                </div>
+                <div class="app-projects--div">
+                    <div class="app-projects--div__overlay">
+                        <p class="app-projects--p">
+                            Już wkrótce
+                        </p>
+                        <a href="#" target="blank" class="app-projects--link"><button class="app-projects--button">Sprawdź</button></a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="app-footer">
+
+
+    <!-- FOOTER -->
+
+
+    <footer class="app-footer" id="app-footer--href">
         <h1 class="h1--primary">Kontakt</h1>
         <div class="app-footer--div">
             <a href="https://github.com/Raloseq" target="blank" class="app-footer--link"><i class="fab fa-github app-footer--icons"></i></a>
@@ -136,15 +183,23 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-    <script>
+    <!-- <script>
         var typed = new Typed('#typed', {
             strings: ['Rafał Brzeziński.', 'twoim developerem.'],
             backSpeed: 50,
             typeSpeed: 50,
             loop: true
         });
-    </script>
-    <script src="js/about.js"></script>
+    </script> -->
+    <script>
+        var typed = new Typed('#typed', {
+              stringsElement: '#typed-strings',
+              backSpeed: 50,
+            typeSpeed: 50,
+            loop: true
+            });
+          </script>
+    <script src="js/slide-in.js" type="module"></script>
     <script src="js/nav.js"></script>
 </body>
 
