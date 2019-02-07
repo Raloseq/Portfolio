@@ -1,4 +1,4 @@
-export const isInViewport = (elem) => {
+const isInViewport = (elem) => {
     let bounding = elem.getBoundingClientRect();
     return (
         bounding.top >= 0 &&
@@ -6,4 +6,7 @@ export const isInViewport = (elem) => {
         bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
         bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
+};
+export {
+    isInViewport
 };

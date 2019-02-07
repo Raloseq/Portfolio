@@ -4,8 +4,8 @@ import {
 const skillsDiv = document.querySelectorAll('.app-skills--div');
 window.addEventListener('scroll', () => {
     if (isInViewport(skillsDiv)) {
-        skillsDiv.forEach(() => {
-            skillsDiv.style.backgroundColor = "red";
+        skillsDiv.forEach((e) => {
+            e.style.backgroundColor = "red";
         })
     }
 });
