@@ -8,7 +8,7 @@
 
     .h1--primary {
         @include h1-primary;
-        margin: 50px auto;
+        margin: 90px auto;
         font-size: 50px;
     }
 
@@ -22,7 +22,7 @@
             box-shadow: 0 0 15px black;
             border-radius: 10px;
             overflow: hidden;
-            margin: 50px auto;
+            margin: 30px auto;
 
             &:nth-child(2) {
                 background: url(../images/portoflio.PNG) center no-repeat;
