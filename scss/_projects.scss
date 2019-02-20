@@ -12,31 +12,57 @@
         font-size: 50px;
     }
 
+    .app-projects--h1 {
+        opacity: 0;
+        transform: scale(0.5);
+        transition: 1s;
+
+        &.app-projects--h1__active {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
     .app-projects--container {
         .app-projects--div {
             position: relative;
             width: 80%;
             height: 40vh;
-            background: url(../images/first-site.PNG) center no-repeat;
-            background-size: cover;
             box-shadow: 0 0 15px black;
             border-radius: 10px;
             overflow: hidden;
             margin: 30px auto;
+            opacity: 0;
+            transform: scale(0.4);
+            background-size: cover;
+
+            &.app-projects--div__active {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            &:nth-child(1) {
+                background: url(../images/first-site.PNG) center no-repeat;
+                background-size: cover;
+                transition: .5s;
+            }
 
             &:nth-child(2) {
                 background: url(../images/portoflio.PNG) center no-repeat;
                 background-size: cover;
+                transition: 1s;
             }
 
             &:nth-child(3) {
                 background: url(../images/hqz-front.PNG) center no-repeat;
                 background-size: cover;
+                transition: 1.5s;
             }
 
             &:nth-child(4) {
                 background: url(../images/coming+soon.jpg) center no-repeat;
                 background-size: cover;
+                transition: 2s;
             }
 
             &:hover .app-projects--div__overlay {

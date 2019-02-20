@@ -11,12 +11,23 @@
         @include h1-primary;
     }
 
+    .app-footer--h1 {
+        opacity: 0;
+        transition: .8s;
+
+        &.app-footer--h1__active {
+            opacity: 1;
+        }
+    }
+
     .app-footer--div {
         display: flex;
 
         .app-footer--link {
             text-decoration: none;
             cursor: pointer;
+            opacity: 0;
+            transition: .8s;
 
             .fa-github {
                 color: black;
@@ -33,11 +44,43 @@
             .app-footer--icons {
                 margin: 30px;
                 font-size: 40px;
+
+                &:hover {
+                    animation: shake-icons 1s linear infinite;
+                }
+            }
+
+            &.app-footer--link__active {
+                opacity: 1;
             }
         }
     }
 }
 
+//ANIMATION
+@keyframes shake-icons {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+//MEDIA 
 @media (min-width: 360px) {
     .app-footer {
         height: 40vh;
