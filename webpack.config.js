@@ -1,18 +1,26 @@
 const path = require('path');
 
 module.exports = {
-    entry: {
-        'bundle.js': [
-            path.resolve(__dirname, './js/nav.js'),
-            path.resolve(__dirname, './js/typing.js'),
-            path.resolve(__dirname, './js/about.js'),
-            path.resolve(__dirname, './js/skills.js'),
-            path.resolve(__dirname, './js/projects.js'),
-            path.resolve(__dirname, './js/contact.js')
-        ]
-    },
+    entry: './js/main.js',
     output: {
-        filename: '[name]',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
+    },
+    module: {
+        rules: [{
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['env']
+                    }
+                }
+            },
+            {
+                test: /\.(scss|sass)$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            }
+        ]
     }
 }
