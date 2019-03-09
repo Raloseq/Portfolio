@@ -75,16 +75,33 @@
 
 //LANDSCAPE 
 @media (min-width: 320px) and (orientation: landscape) {
-    .app-nav {
+    .app-header {
         .app-header--text {
             .app-header--h1 {
                 font-size: 50px;
             }
         }
 
+        .fas {
+            font-size: 30px;
+        }
+
         .app-header--typing {
             position: absolute;
-            top: 80%;
+            top: 60%;
+        }
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .app-header {
+        .fas {
+            font-size: 50px;
+        }
+
+        .app-header--typing {
+            position: absolute;
+            top: 50%;
         }
     }
 }
