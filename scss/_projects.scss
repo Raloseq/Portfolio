@@ -173,3 +173,36 @@
         }
     }
 }
+
+//LANDSCAPE
+@media (min-width: 320px) and (orientation: landscape) {
+    .app-projects {
+        .app-projects--container {
+            .app-projects--div {
+                flex-basis: 60%;
+                height: 60vh;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .app-projects {
+        .app-projects--container {
+            .app-projects--div {
+                flex-basis: 40%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .app-projects {
+        .app-projects--container {
+            .app-projects--div {
+                flex-basis: 40%;
+                height: 30vh;
+            }
+        }
+    }
+}

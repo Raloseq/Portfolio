@@ -14,10 +14,7 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: [{
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['env']
-                    }
+                    loader: 'babel-loader'
                 }]
             },
             {
@@ -25,22 +22,9 @@ module.exports = {
                 use: [{
                     loader: 'html-loader',
                     options: {
-                        root: path.resolve(__dirname, 'dist')
+                        minimize: true
                     }
                 }]
-            },
-            {
-                test: /\.svg$/,
-                use: 'file-loader',
-            },
-            {
-                test: /\.png$/,
-                use: [{
-                    loader: 'url-loader',
-                    options: {
-                        mimetype: 'image/png',
-                    },
-                }, ],
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/,
@@ -68,8 +52,8 @@ module.exports = {
             template: './index.html'
         }),
         new MiniCssExtratPlugin({
-            filename: devMode ? '[name].css' : '[name].[hash].css',
-            chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
+            filename: "[name].css",
+            chunkFilename: "[id].css"
         })
     ]
 }

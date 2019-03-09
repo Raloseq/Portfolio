@@ -47,7 +47,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (orientation: portrait) {
     .app-header {
         .app-header--text {
             .app-header--h1 {
@@ -55,8 +55,36 @@
             }
         }
 
-        #typed-strings {
-            font-size: 50px;
+        .app-header--typing {
+            #typed-strings {
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .app-header {
+        .app-header--text {
+            .app-header--h1 {
+                font-size: 80px;
+            }
+        }
+    }
+}
+
+//LANDSCAPE 
+@media (min-width: 320px) and (orientation: landscape) {
+    .app-nav {
+        .app-header--text {
+            .app-header--h1 {
+                font-size: 50px;
+            }
+        }
+
+        .app-header--typing {
+            position: absolute;
+            top: 80%;
         }
     }
 }

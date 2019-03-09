@@ -5,7 +5,7 @@
     position: fixed;
     width: 100%;
     font-size: 25px;
-    top: -100%;
+    top: -200%;
     z-index: 99999;
     background-color: rgba(0, 0, 0, .8);
     transition: .4s;
@@ -94,6 +94,10 @@
             &:nth-child(3) {
                 bottom: 0;
             }
+
+            &.black {
+                background-color: black;
+            }
         }
     }
 
@@ -116,6 +120,10 @@
             &:nth-child(3) {
                 bottom: calc(50% - 2.5px);
                 transform: rotate(-45deg);
+            }
+
+            &.black {
+                background-color: black;
             }
         }
     }

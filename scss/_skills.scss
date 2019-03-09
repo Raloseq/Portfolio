@@ -28,7 +28,6 @@
             flex-basis: 100%;
             @include flex-center-mobile;
             opacity: 0;
-            transform: translateY(30px);
 
             &.skills-div__active {
                 opacity: 1;
@@ -162,5 +161,29 @@
             }
         }
 
+    }
+}
+
+//LANDSCAPE 
+@media (min-width: 320px) and (orientation: landscape) {
+    .app-skills {
+        .app-skills--container {
+            .app-skills--div {
+                padding: 50px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+    .app-skills {
+        .app-skills--container {
+            .app-skills--div {
+                padding: 0;
+                flex-basis: 40%;
+                text-align: justify;
+            }
+        }
     }
 }
