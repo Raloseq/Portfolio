@@ -42,19 +42,19 @@
             }
 
             &:nth-child(1) {
-                background: url(../images/first-site.PNG) center no-repeat;
+                background: url(../images/first-site.png) center no-repeat;
                 background-size: cover;
                 transition: .5s;
             }
 
             &:nth-child(2) {
-                background: url(../images/portoflio.PNG) center no-repeat;
+                background: url(../images/hero-image.jpg) center no-repeat;
                 background-size: cover;
                 transition: 1s;
             }
 
             &:nth-child(3) {
-                background: url(../images/hqz-front.PNG) center no-repeat;
+                background: url(../images/hqz-front.png) center no-repeat;
                 background-size: cover;
                 transition: 1.5s;
             }
