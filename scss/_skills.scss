@@ -29,6 +29,12 @@
             @include flex-center-mobile;
             opacity: 0;
 
+            .app-skills--div_row {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
             &.skills-div__active {
                 opacity: 1;
                 transform: translateY(0);
